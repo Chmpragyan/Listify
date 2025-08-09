@@ -1,4 +1,4 @@
-package com.example.listify
+package com.example.listify.data.db.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

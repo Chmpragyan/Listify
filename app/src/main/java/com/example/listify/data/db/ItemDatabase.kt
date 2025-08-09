@@ -1,9 +1,10 @@
-package com.example.listify
+package com.example.listify.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.listify.data.db.model.ListItem
 
 @Database(
     entities = [ListItem::class],
