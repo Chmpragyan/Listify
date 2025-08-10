@@ -17,5 +17,5 @@ interface ItemsDao {
     suspend fun delete(item: ListItem)
 
     @Query("SELECT * FROM items")
-    suspend fun getAllItems(): LiveData<List<ListItem>>
+    fun getAllItems(): LiveData<List<ListItem>>
 }
