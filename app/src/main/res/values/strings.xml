@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Listify</string>
+    <string name="decrease_icon">Decrease icon</string>
+    <string name="increase_icon">Increase icon</string>
+    <string name="delete_icon">Delete icon</string>
 </resources>
