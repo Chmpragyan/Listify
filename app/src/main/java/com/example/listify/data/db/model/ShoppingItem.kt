@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "items")
-data class ListItem(
+data class ShoppingItem(
     @ColumnInfo(name = "item_name")
     var name: String,
     @ColumnInfo(name = "item_amount")
