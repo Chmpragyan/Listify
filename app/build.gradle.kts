@@ -63,6 +63,6 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // Kodein
-    implementation ("org.kodein.di:kodein-di-generic-jvm:6.4.0")
-    implementation ("org.kodein.di:kodein-di-framework-android-x:7.26.1")
+    implementation("org.kodein.di:kodein-di:7.26.1")
+    implementation("org.kodein.di:kodein-di-framework-android-x:7.26.1")
 }
