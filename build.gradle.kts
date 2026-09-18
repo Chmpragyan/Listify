@@ -6,12 +6,19 @@ plugins {
     alias(libs.plugins.sonar)
 }
 
-sonarqube {
+sonar {
     properties {
         property("sonar.projectKey", "chmpragyan_Listify")
         property("sonar.projectName", "Listify")
         property("sonar.organization", "chmpragyan")
         property("sonar.host.url", "https://sonarcloud.io")
-        property("sonar.sources", "app/src/main/java")
+        
+        // Android specific coverage and reports
+        property("sonar.junit.reportPaths", "app/build/test-results/testDebugUnitTest")
+        property("sonar.coverage.jacoco.xmlReportPaths", "app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml")
+        property("sonar.android.lint.report", "app/build/reports/lint-results-debug.xml")
+        
+        // Fix for branch detection if needed
+        property("sonar.scm.provider", "git")
     }
 }
