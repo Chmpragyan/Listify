@@ -6,13 +6,12 @@ plugins {
     alias(libs.plugins.sonar)
 }
 
-sonar {
+sonarqube {
     properties {
         property("sonar.projectKey", "chmpragyan_Listify")
         property("sonar.projectName", "Listify")
         property("sonar.organization", "chmpragyan")
-        property("sonar.host.url", "http://sonarcloud.io/") // Default, should be overridden by env/CI
-        property("sonar.language", "kotlin")
-        property("sonar.sources", "src/main/java")
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.sources", "app/src/main/java")
     }
 }
